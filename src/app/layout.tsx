@@ -67,6 +67,14 @@ export default function RootLayout({
 
         <footer className="bg-white border-t border-gray-200 mt-12">
           <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm">
+              <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800">
+                Privacy Policy
+              </a>
+              <a href="/terms" className="text-blue-600 hover:text-blue-800">
+                Terms of Service
+              </a>
+            </div>
             <div className="text-center text-sm text-gray-600">
               <p>&copy; 2024 Currency Converter. All rights reserved.</p>
               <p className="mt-2">
