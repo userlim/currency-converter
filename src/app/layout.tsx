@@ -4,16 +4,16 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Currency Converter – Free Exchange Rate Calculator',
   description: 'Free currency converter with real-time exchange rates. Convert between 30+ currencies instantly.',
-  metadataBase: new URL('https://currency-converter-calc.vercel.app'),
+  metadataBase: new URL('https://currency-exchange-calculator-wheat.vercel.app'),
   openGraph: {
     title: 'Currency Converter – Free Exchange Rate Calculator',
     description: 'Free currency converter with real-time exchange rates. Convert between 30+ currencies instantly.',
-    url: 'https://currency-converter-calc.vercel.app',
+    url: 'https://currency-exchange-calculator-wheat.vercel.app',
     siteName: 'Currency Converter',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://currency-converter-calc.vercel.app',
+    canonical: 'https://currency-exchange-calculator-wheat.vercel.app',
   },
 }
 

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: [],
     },
-    sitemap: 'https://currency-converter-calc.vercel.app/sitemap.xml',
+    sitemap: 'https://currency-exchange-calculator-wheat.vercel.app/sitemap.xml',
   }
 }
