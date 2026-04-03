@@ -28,6 +28,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="hsjncRi9cl3tz3Otd6SJKurSt_V1bZ0AKO-bdWIGeHM" />
+        <meta name="google-site-verification" content="ETO59LUETFhBHTx7GMun0GscvJgzLq2iGWdeAmh3e10" />
         <meta name="google-adsense-account" content="ca-pub-4361110443201092" />
         <meta name="keywords" content="currency converter, exchange rate, USD, EUR, GBP, currency calculator, forex" />
         <script
