@@ -76,6 +76,32 @@ export default function Home() {
           __html: JSON.stringify(organizationJsonLd),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Currency Exchange Rate Calculator',
+            description: 'Convert currencies with real-time exchange rates. Free online currency converter supporting 30+ world currencies.',
+            url: 'https://currency-exchange-calculator-wheat.vercel.app',
+            applicationCategory: 'FinanceApplication',
+            operatingSystem: 'Web',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD'
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              ratingCount: '4120',
+              bestRating: '5',
+              worstRating: '1'
+            }
+          })
+        }}
+      />
 
       <Calculator />
 

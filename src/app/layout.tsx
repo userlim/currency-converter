@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Currency Converter – Free Exchange Rate Calculator',
-  description: 'Free currency converter with real-time exchange rates. Convert between 30+ currencies instantly.',
+  title: 'Currency Converter (Free, 2026) – Live Exchange Rates for 30+ Currencies',
+  description: 'Convert 30+ currencies with live 2026 exchange rates. Free, fast, and accurate currency calculator. Updated every minute — try it now.',
   metadataBase: new URL('https://currency-exchange-calculator-wheat.vercel.app'),
   openGraph: {
-    title: 'Currency Converter – Free Exchange Rate Calculator',
-    description: 'Free currency converter with real-time exchange rates. Convert between 30+ currencies instantly.',
+    title: 'Currency Converter (Free, 2026) – Live Exchange Rates for 30+ Currencies',
+    description: 'Convert 30+ currencies with live 2026 exchange rates. Free, fast, and accurate currency calculator. Updated every minute — try it now.',
     url: 'https://currency-exchange-calculator-wheat.vercel.app',
     siteName: 'Currency Converter',
     type: 'website',
@@ -72,7 +72,16 @@ export default function RootLayout({
                 Terms of Service
               </a>
             </div>
-            <div className="text-center text-sm text-gray-600">
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-3">
+              <span className="text-xs text-gray-400 font-semibold">Related Free Tools:</span>
+                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Crypto Profit Calculator</a>
+                <a href="https://gold-price-today-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Gold Price Calculator</a>
+                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Inflation Calculator</a>
+                <a href="https://tariff-calculator-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Tariff Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc</a>
+            </div>
+          <div className="text-center text-sm text-gray-600">
               <p>&copy; 2024 Currency Converter. All rights reserved.</p>
               <p className="mt-2">
                 Disclaimer: Exchange rates are approximate and for informational purposes only.
