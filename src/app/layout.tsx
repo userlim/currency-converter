@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Currency Converter (Free, 2026) – Live Exchange Rates for 30+ Currencies',
@@ -31,11 +32,8 @@ export default function RootLayout({
         <meta name="google-site-verification" content="ETO59LUETFhBHTx7GMun0GscvJgzLq2iGWdeAmh3e10" />
         <meta name="google-adsense-account" content="ca-pub-4361110443201092" />
         <meta name="keywords" content="currency converter, exchange rate, USD, EUR, GBP, currency calculator, forex" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-P04TH8XJJ9"
-        ></script>
-        <script
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-P04TH8XJJ9" strategy="lazyOnload" />
+        <Script id="gtag-init" strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
