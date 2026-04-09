@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Calculator from './calculator'
 
 export const metadata: Metadata = {
-  title: 'Currency Converter – Free Exchange Rate Calculator',
-  description: 'Free online currency converter with real-time exchange rates for 30+ currencies. Fast, accurate, and easy to use.',
+  title: 'Free Currency Converter (2026) – 150+ Live Exchange Rates, Instant Results',
+  description: 'Convert 150+ currencies with real-time exchange rates. Free, fast, and accurate currency calculator. Compare mid-market rates instantly — no signup required.',
   keywords: 'currency converter, exchange rate, USD, EUR, GBP, JPY, currency calculator, forex converter, money converter',
   openGraph: {
     title: 'Currency Converter – Free Exchange Rate Calculator',

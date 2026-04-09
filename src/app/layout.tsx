@@ -43,7 +43,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4361110443201092" crossOrigin="anonymous"></script>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4361110443201092" crossOrigin="anonymous" strategy="afterInteractive" />
       </head>
       <body>
         <header className="bg-white border-b border-gray-200">
@@ -75,9 +75,9 @@ export default function RootLayout({
               <span className="text-xs text-gray-400 font-semibold">Related Free Tools:</span>
                 <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Crypto Profit Calculator</a>
                 <a href="https://gold-price-today-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Gold Price Calculator</a>
-                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Inflation Calculator</a>
-                <a href="https://tariff-calculator-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Tariff Calculator</a>
-                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc</a>
+                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Inflation Rate Calculator</a>
+                <a href="https://tariff-calculator-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">US Tariff Cost Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc All-in-One Tools</a>
             </div>
           <div className="text-center text-sm text-gray-600">
               <p>&copy; 2024 Currency Converter. All rights reserved.</p>
