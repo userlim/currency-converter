@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Service - Currency Converter',
   description: 'Terms of Service for Currency Converter.',
+  robots: { index: false, follow: true },
 }
 
 export default function TermsOfService() {

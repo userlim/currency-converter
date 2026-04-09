@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: [],
+      disallow: ['/api/'],
     },
     sitemap: 'https://currency-exchange-calculator-wheat.vercel.app/sitemap.xml',
   }

@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     siteName: 'Currency Converter',
     type: 'website',
   },
+    twitter: {
+    card: 'summary_large_image',
+    title: 'Currency Converter — Free Exchange Rate Calculator',
+    description: 'Free Exchange Rate Calculator',
+  },
   alternates: {
     canonical: 'https://currency-exchange-calculator-wheat.vercel.app',
   },

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy - Currency Converter',
   description: 'Privacy Policy for Currency Converter. Learn how we collect, use, and protect your information.',
+  robots: { index: false, follow: true },
 }
 
 export default function PrivacyPolicy() {
