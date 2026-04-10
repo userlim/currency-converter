@@ -464,7 +464,7 @@ export default function Calculator() {
           </div>
 
           {/* Result */}
-          <div className="mb-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-gray-200">
+          <div className="mb-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-white/10">
             <div className="text-sm font-semibold mb-2" style={{ color: 'var(--text-muted)' }}>
               {t.result}
             </div>
@@ -477,7 +477,7 @@ export default function Calculator() {
           </div>
 
           {/* Popular Conversions */}
-          <div className="mt-8 pt-6 border-t border-gray-200">
+          <div className="mt-8 pt-6 border-t border-white/10">
             <h3 className="text-sm font-semibold mb-4" style={{ color: 'var(--text)' }}>
               {t.popular}
             </h3>
@@ -495,7 +495,7 @@ export default function Calculator() {
           </div>
 
           {/* Disclaimer */}
-          <div className="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+          <div className="mt-6 p-4 bg-yellow-500/10 rounded-lg border border-yellow-200">
             <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
               ⚠️ {t.disclaimer}
             </p>
@@ -507,12 +507,12 @@ export default function Calculator() {
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--text)' }}>
             About This Currency Converter
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-300 mb-4">
             Our free currency converter provides instant exchange rate calculations for over 30 major
             world currencies. Whether you're traveling, shopping online, or managing international
             finances, our tool makes currency conversion quick and easy.
           </p>
-          <p className="text-gray-700">
+          <p className="text-gray-300">
             Use the dropdown menus to select your currencies, enter the amount you want to convert,
             and instantly see the result. You can also use the popular conversion buttons for quick
             calculations between commonly traded currency pairs.
