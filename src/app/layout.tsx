@@ -5,25 +5,29 @@ import Script from 'next/script'
 export const metadata: Metadata = {
   title: 'Currency Converter (Free, 2026) – Live Exchange Rates for 30+ Currencies',
   description: 'Convert 30+ currencies with live 2026 exchange rates. Free, fast, and accurate currency calculator. Updated every minute — try it now.',
-  keywords:
-    'currency converter, usd to eur, dollar to peso, exchange rate calculator, usd to gbp, currency exchange calculator, dollar to yen, euro to dollar, money converter, live exchange rates, usd to cad, dollar to rupee, free currency converter, real time exchange rate, best exchange rate today',
+  keywords: 'currency converter, usd to eur, dollar to peso, exchange rate calculator, usd to gbp, currency exchange calculator, dollar to yen, euro to dollar, money converter, live exchange rates, usd to cad, dollar to rupee, free currency converter, real time exchange rate, best exchange rate today',
   metadataBase: new URL('https://currency-exchange-calculator-wheat.vercel.app'),
   openGraph: {
     title: 'Currency Converter (Free, 2026) – Live Exchange Rates for 30+ Currencies',
     description: 'Convert 30+ currencies with live 2026 exchange rates. Free, fast, and accurate currency calculator. Updated every minute — try it now.',
-  keywords:
-    'currency converter, usd to eur, dollar to peso, exchange rate calculator, usd to gbp, currency exchange calculator, dollar to yen, euro to dollar, money converter, live exchange rates, usd to cad, dollar to rupee, free currency converter, real time exchange rate, best exchange rate today',
     url: 'https://currency-exchange-calculator-wheat.vercel.app',
     siteName: 'Currency Converter',
+    locale: 'en_US',
     type: 'website',
   },
-    twitter: {
+  twitter: {
     card: 'summary_large_image',
-    title: 'Currency Converter — Free Exchange Rate Calculator',
-    description: 'Free Exchange Rate Calculator',
-  keywords:
-    'currency converter, usd to eur, dollar to peso, exchange rate calculator, usd to gbp, currency exchange calculator, dollar to yen, euro to dollar, money converter, live exchange rates, usd to cad, dollar to rupee, free currency converter, real time exchange rate, best exchange rate today',
+    title: 'Currency Converter',
+    description: 'Convert 30+ currencies with live 2026 exchange rates. Free, fast, and accurate currency calculator. Updated every minute — try it now.',
   },
+  robots: {
+    index: true,
+    follow: true,
+    'max-image-preview': 'large' as const,
+    'max-snippet': -1,
+    'max-video-preview': -1,
+  },
+  icons: { icon: '/favicon.svg' },
   alternates: {
     canonical: 'https://currency-exchange-calculator-wheat.vercel.app',
     languages: {
@@ -31,8 +35,7 @@ export const metadata: Metadata = {
       'x-default': 'https://currency-exchange-calculator-wheat.vercel.app',
     },
   },
-  },
-}
+};
 
 export default function RootLayout({
   children,
@@ -79,7 +82,7 @@ export default function RootLayout({
         }} />
 </head>
       <body>
-        <header className="bg-white border-b border-gray-200">
+        <header className="bg-white border-b border-[rgba(255,255,255,0.06)]">
           <nav className="max-w-6xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-center">
               <h1 className="text-2xl font-bold text-center" style={{ color: 'var(--accent)' }}>
@@ -93,7 +96,7 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="bg-white border-t border-gray-200 mt-12">
+        <footer className="bg-white border-t border-[rgba(255,255,255,0.06)] mt-12">
           <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm">
               <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800">
@@ -105,14 +108,14 @@ export default function RootLayout({
             </div>
             
             <div className="flex flex-wrap justify-center gap-4 mb-3">
-              <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Related Free Tools:</span>
-                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Crypto Profit Calculator</a>
-                <a href="https://gold-price-today-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Gold Price Calculator</a>
-                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Inflation Rate Calculator</a>
-                <a href="https://tariff-calculator-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">US Tariff Cost Calculator</a>
-                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
+              <span className="text-xs text-[var(--text-secondary)] font-semibold uppercase tracking-wider">Related Free Tools:</span>
+                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Crypto Profit Calculator</a>
+                <a href="https://gold-price-today-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Gold Price Calculator</a>
+                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Inflation Rate Calculator</a>
+                <a href="https://tariff-calculator-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">US Tariff Cost Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
             </div>
-          <div className="text-center text-sm text-gray-600">
+          <div className="text-center text-sm text-[var(--text-secondary)]">
               <p>&copy; 2024 Currency Converter. All rights reserved.</p>
               <p className="mt-2">
                 Disclaimer: Exchange rates are approximate and for informational purposes only.
