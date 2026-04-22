@@ -82,7 +82,7 @@ export default function RootLayout({
         }} />
 </head>
       <body>
-        <header className="bg-white border-b border-[rgba(255,255,255,0.06)]">
+        <header className="bg-white border-b border-[#F2F4F6]">
           <nav className="max-w-6xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-center">
               <h1 className="text-2xl font-bold text-center" style={{ color: 'var(--accent)' }}>
@@ -96,7 +96,7 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="bg-white border-t border-[rgba(255,255,255,0.06)] mt-12">
+        <footer className="bg-white border-t border-[#F2F4F6] mt-12">
           <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm">
               <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800">
@@ -108,14 +108,14 @@ export default function RootLayout({
             </div>
             
             <div className="flex flex-wrap justify-center gap-4 mb-3">
-              <span className="text-xs text-[var(--text-secondary)] font-semibold uppercase tracking-wider">Related Free Tools:</span>
-                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Crypto Profit Calculator</a>
-                <a href="https://gold-price-today-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Gold Price Calculator</a>
-                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Inflation Rate Calculator</a>
-                <a href="https://tariff-calculator-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">US Tariff Cost Calculator</a>
-                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
+              <span className="text-xs text-[#4E5968] font-semibold uppercase tracking-wider">Related Free Tools:</span>
+                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[#8B95A1] hover:text-[#191F28] transition-colors text-xs">Crypto Profit Calculator</a>
+                <a href="https://gold-price-today-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[#8B95A1] hover:text-[#191F28] transition-colors text-xs">Gold Price Calculator</a>
+                <a href="https://inflation-rate-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[#8B95A1] hover:text-[#191F28] transition-colors text-xs">Inflation Rate Calculator</a>
+                <a href="https://tariff-calculator-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[#8B95A1] hover:text-[#191F28] transition-colors text-xs">US Tariff Cost Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[#8B95A1] hover:text-[#191F28] transition-colors text-xs">UtiliCalc All-in-One Tools</a>
             </div>
-          <div className="text-center text-sm text-[var(--text-secondary)]">
+          <div className="text-center text-sm text-[#4E5968]">
               <p>&copy; 2024 Currency Converter. All rights reserved.</p>
               <p className="mt-2">
                 Disclaimer: Exchange rates are approximate and for informational purposes only.

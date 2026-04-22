@@ -464,7 +464,7 @@ export default function Calculator() {
           </div>
 
           {/* Result */}
-          <div className="mb-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-[rgba(255,255,255,0.06)]">
+          <div className="mb-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-[#F2F4F6]">
             <div className="text-sm font-semibold mb-2" style={{ color: 'var(--text-muted)' }}>
               {t.result}
             </div>
@@ -477,7 +477,7 @@ export default function Calculator() {
           </div>
 
           {/* Popular Conversions */}
-          <div className="mt-8 pt-6 border-t border-white/10">
+          <div className="mt-8 pt-6 border-t border-[#E5E8EB]">
             <h3 className="text-sm font-semibold mb-4" style={{ color: 'var(--text)' }}>
               {t.popular}
             </h3>
@@ -507,12 +507,12 @@ export default function Calculator() {
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--text)' }}>
             About This Currency Converter
           </h2>
-          <p className="text-[var(--text-muted)] mb-4">
+          <p className="text-[#8B95A1] mb-4">
             Our free currency converter provides instant exchange rate calculations for over 30 major
             world currencies. Whether you're traveling, shopping online, or managing international
             finances, our tool makes currency conversion quick and easy.
           </p>
-          <p className="text-[var(--text-muted)]">
+          <p className="text-[#8B95A1]">
             Use the dropdown menus to select your currencies, enter the amount you want to convert,
             and instantly see the result. You can also use the popular conversion buttons for quick
             calculations between commonly traded currency pairs.
