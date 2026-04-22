@@ -374,7 +374,7 @@ export default function Calculator() {
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value as Language)}
-            className="input px-4 py-2 text-sm w-auto"
+            className="tool-input px-4 py-2 text-sm w-auto"
           >
             <option value="en">English</option>
             <option value="ko">한국어</option>
@@ -409,7 +409,7 @@ export default function Calculator() {
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              className="input"
+              className="tool-input"
               placeholder="Enter amount"
               min="0"
               step="0.01"
@@ -424,7 +424,7 @@ export default function Calculator() {
             <select
               value={fromCurrency}
               onChange={(e) => setFromCurrency(e.target.value)}
-              className="input"
+              className="tool-input"
             >
               {currencyList.map((curr) => (
                 <option key={curr} value={curr}>
@@ -453,7 +453,7 @@ export default function Calculator() {
             <select
               value={toCurrency}
               onChange={(e) => setToCurrency(e.target.value)}
-              className="input"
+              className="tool-input"
             >
               {currencyList.map((curr) => (
                 <option key={curr} value={curr}>
@@ -464,7 +464,7 @@ export default function Calculator() {
           </div>
 
           {/* Result */}
-          <div className="mb-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-[#F2F4F6]">
+          <div className="mb-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-gray-200">
             <div className="text-sm font-semibold mb-2" style={{ color: 'var(--text-muted)' }}>
               {t.result}
             </div>
@@ -477,7 +477,7 @@ export default function Calculator() {
           </div>
 
           {/* Popular Conversions */}
-          <div className="mt-8 pt-6 border-t border-[#E5E8EB]">
+          <div className="mt-8 pt-6 border-t border-gray-200">
             <h3 className="text-sm font-semibold mb-4" style={{ color: 'var(--text)' }}>
               {t.popular}
             </h3>
@@ -495,7 +495,7 @@ export default function Calculator() {
           </div>
 
           {/* Disclaimer */}
-          <div className="mt-6 p-4 bg-yellow-500/10 rounded-lg border border-yellow-200">
+          <div className="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
             <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
               ⚠️ {t.disclaimer}
             </p>
@@ -507,12 +507,12 @@ export default function Calculator() {
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--text)' }}>
             About This Currency Converter
           </h2>
-          <p className="text-[#8B95A1] mb-4">
+          <p className="text-gray-700 mb-4">
             Our free currency converter provides instant exchange rate calculations for over 30 major
             world currencies. Whether you're traveling, shopping online, or managing international
             finances, our tool makes currency conversion quick and easy.
           </p>
-          <p className="text-[#8B95A1]">
+          <p className="text-gray-700">
             Use the dropdown menus to select your currencies, enter the amount you want to convert,
             and instantly see the result. You can also use the popular conversion buttons for quick
             calculations between commonly traded currency pairs.

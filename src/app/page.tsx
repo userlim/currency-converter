@@ -11,10 +11,6 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://currency-converter-calc.vercel.app',
   },
-  other: {
-    'article:published_time': '2025-01-15T00:00:00Z',
-    'article:modified_time': '2026-04-10T00:00:00Z',
-  },
 }
 
 const faqData = [
@@ -117,10 +113,10 @@ export default function Home() {
         <div className="space-y-6">
           {faqData.map((item, idx) => (
             <div key={idx} className="card">
-              <h3 className="text-h3 mb-2 text-[#191F28]" style={{ color: 'var(--accent)' }}>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: 'var(--accent)' }}>
                 {item.question}
               </h3>
-              <p className="text-[#8B95A1]">{item.answer}</p>
+              <p className="text-gray-700">{item.answer}</p>
             </div>
           ))}
         </div>
@@ -138,64 +134,51 @@ export default function Home() {
               <h3 className="font-bold mb-2" style={{ color: 'var(--accent)' }}>
                 Instant Results
               </h3>
-              <p className="text-sm text-[#8B95A1]">Real-time conversion with no delays</p>
+              <p className="text-sm text-gray-700">Real-time conversion with no delays</p>
             </div>
             <div className="card text-center">
               <div className="text-3xl mb-2">🌍</div>
               <h3 className="font-bold mb-2" style={{ color: 'var(--accent)' }}>
                 30+ Currencies
               </h3>
-              <p className="text-sm text-[#8B95A1]">Support for major world currencies</p>
+              <p className="text-sm text-gray-700">Support for major world currencies</p>
             </div>
             <div className="card text-center">
               <div className="text-3xl mb-2">📱</div>
               <h3 className="font-bold mb-2" style={{ color: 'var(--accent)' }}>
                 Mobile Friendly
               </h3>
-              <p className="text-sm text-[#8B95A1]">Works perfectly on any device</p>
+              <p className="text-sm text-gray-700">Works perfectly on any device</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Extended Content Section for SEO depth */}
-      <section id="content-depth-section" className="mt-20 max-w-3xl mx-auto px-6 relative z-[1]">
-        <h2 className="text-h2 mb-6 text-[#191F28]">Complete Guide</h2>
+      <section id="content-depth-section" className="mt-12 max-w-3xl mx-auto px-4">
+        <h2 className="text-2xl font-bold mb-6">Complete Guide</h2>
         
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[#191F28]">How Currency Exchange Rates Work</h3>
-              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Currency exchange rates represent the price of one currency expressed in terms of another. These rates are determined by the foreign exchange (forex) market, the world's largest financial market with daily trading volume exceeding $7.5 trillion as of 2025. Rates fluctuate based on supply and demand, influenced by factors including interest rate differentials, inflation, political stability, economic indicators, and trade balances.` }} />
+              <h3 className="text-lg font-semibold mb-2">How Currency Exchange Rates Work</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Currency exchange rates represent the price of one currency expressed in terms of another. These rates are determined by the foreign exchange (forex) market, the world's largest financial market with daily trading volume exceeding $7.5 trillion as of 2025. Rates fluctuate based on supply and demand, influenced by factors including interest rate differentials, inflation, political stability, economic indicators, and trade balances.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[#191F28]">Types of Exchange Rates</h3>
-              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `There are several types of exchange rates you should understand. The <strong>mid-market rate</strong> (also called the interbank rate) is the midpoint between buy and sell prices on the global forex market — this is the fairest rate and what our converter displays. <strong>Retail rates</strong> from banks and exchange bureaus include a markup (typically 1-5%) as profit margin. <strong>Fixed rates</strong> are pegged by central banks (like the Saudi Riyal to USD), while <strong>floating rates</strong> fluctuate freely based on market forces.` }} />
+              <h3 className="text-lg font-semibold mb-2">Types of Exchange Rates</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `There are several types of exchange rates you should understand. The <strong>mid-market rate</strong> (also called the interbank rate) is the midpoint between buy and sell prices on the global forex market — this is the fairest rate and what our converter displays. <strong>Retail rates</strong> from banks and exchange bureaus include a markup (typically 1-5%) as profit margin. <strong>Fixed rates</strong> are pegged by central banks (like the Saudi Riyal to USD), while <strong>floating rates</strong> fluctuate freely based on market forces.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[#191F28]">Tips for Getting the Best Exchange Rate</h3>
-              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `To maximize your currency conversion, compare rates across multiple providers before exchanging. Avoid airport and hotel exchange counters, which typically offer the worst rates. Online services like Wise (formerly TransferWise) and Revolut often provide near-mid-market rates with minimal fees. If traveling, withdraw local currency from ATMs abroad for better rates than cash exchange. Using our converter's mid-market rate as a benchmark helps you evaluate how much markup any provider is charging.` }} />
+              <h3 className="text-lg font-semibold mb-2">Tips for Getting the Best Exchange Rate</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `To maximize your currency conversion, compare rates across multiple providers before exchanging. Avoid airport and hotel exchange counters, which typically offer the worst rates. Online services like Wise (formerly TransferWise) and Revolut often provide near-mid-market rates with minimal fees. If traveling, withdraw local currency from ATMs abroad for better rates than cash exchange. Using our converter's mid-market rate as a benchmark helps you evaluate how much markup any provider is charging.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[#191F28]">Major World Currencies and Their Significance</h3>
-              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The US Dollar (USD) remains the world's primary reserve currency, used in approximately 88% of global forex transactions. The Euro (EUR) is the second most traded currency, used by 20 EU member states. Other major currencies include the Japanese Yen (JPY), British Pound (GBP), Chinese Yuan (CNY), Swiss Franc (CHF), and Australian Dollar (AUD). Understanding these major pairs helps you make more informed conversion decisions.` }} />
+              <h3 className="text-lg font-semibold mb-2">Major World Currencies and Their Significance</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The US Dollar (USD) remains the world's primary reserve currency, used in approximately 88% of global forex transactions. The Euro (EUR) is the second most traded currency, used by 20 EU member states. Other major currencies include the Japanese Yen (JPY), British Pound (GBP), Chinese Yuan (CNY), Swiss Franc (CHF), and Australian Dollar (AUD). Understanding these major pairs helps you make more informed conversion decisions.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[#191F28]">Currency Conversion for International Business</h3>
-              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `For businesses operating internationally, currency fluctuations can significantly impact profitability. Forward contracts allow businesses to lock in exchange rates for future transactions, while currency hedging strategies help minimize exposure to unfavorable rate movements. Our converter provides the real-time baseline rate that businesses can use to evaluate hedging costs and set international pricing strategies.` }} />
+              <h3 className="text-lg font-semibold mb-2">Currency Conversion for International Business</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `For businesses operating internationally, currency fluctuations can significantly impact profitability. Forward contracts allow businesses to lock in exchange rates for future transactions, while currency hedging strategies help minimize exposure to unfavorable rate movements. Our converter provides the real-time baseline rate that businesses can use to evaluate hedging costs and set international pricing strategies.` }} />
             </div>
       </section>
-    
-      {/* Keyword-Optimized Content */}
-      <section id="keyword-seo-section" className="mt-12 max-w-3xl mx-auto px-6 pb-16 relative z-[1]">
-        <p className="text-sm text-[#8B95A1] leading-relaxed">
-          Convert currencies instantly with live exchange rates. Our free currency converter supports 150+ currencies with real-time rates. Check USD to EUR, dollar to peso, and all major pairs. Get the best exchange rate today with our accurate, real-time exchange rate tool.
-        </p>
-<div className="mt-3 flex flex-wrap gap-2">
-          <a href="https://bitcoin-profit-calculator.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Crypto Profit Calculator →</a>
-          <a href="https://tariff-calculator-app.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Tariff Calculator →</a>
-          <a href="https://gold-price-today-calculator.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Gold Price Calculator →</a>
-        </div>
-
-      </section>
-      </>
+    </>
   )
 }
